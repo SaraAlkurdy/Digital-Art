@@ -1,0 +1,259 @@
+#About {
+  overflow: hidden;
+
+  .about-text {
+    hr {
+      height: 6px;
+      width: 50px;
+      background: #dd1e4b;
+      margin: 0;
+    }
+
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 50px;
+      font-weight: 600;
+      margin: 10px 0 20px;
+    }
+
+    p {
+      color: #8e8e8e;
+      font-size: 18px;
+    }
+  }
+
+  .media {
+    margin-top: 70px;
+
+    i {
+      color: #dd1e4b;
+      font-size: 50px;
+      margin-right: 45px;
+    }
+
+    .media-body {
+      h5 {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 25px;
+        margin: 0px 0 20px;
+      }
+
+      p {
+        color: #8e8e8e;
+        font-size: 17px;
+        width: 70%;
+      }
+    }
+  }
+
+  .about-img {
+    .item {
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+
+  hr {
+    width: 6px;
+    height: 100px;
+    background: #dd1e4b;
+    margin: 100px auto;
+  }
+
+  .dotted-line {
+    border-bottom: 1.5px dotted #626262;
+    width: 50%;
+    margin: 130px 0;
+    position: relative;
+    height: auto;
+
+    hr {
+      width: 6px;
+      height: 100px;
+      background: #dd1e4b;
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      margin: 0;
+    }
+  }
+
+  .video-text {
+    text-align: center;
+
+    h1 {
+      font-weight: 700;
+      color: #fff;
+      text-transform: capitalize;
+    }
+
+    p {
+      color: #8e8e8e;
+      font-size: 17px;
+      width: 65%;
+      margin: 25px auto;
+    }
+
+    a {
+      i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: red;
+        font-size: 70px;
+      }
+
+      .triangle {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to bottom left,
+            transparent 49.5%,
+            #dd1e4b 50% calc(50% + 10px),
+            transparent calc(50% + 11px)) right/50% 100%,
+          linear-gradient(to bottom right,
+            transparent 49.5%,
+            #dd1e4b 50% calc(50% + 10px),
+            transparent calc(50% + 11px)) left/50% 100%,
+          linear-gradient(#dd1e4b, #dd1e4b) bottom/calc(100% - 20px) 10px;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: rotate(90deg);
+        transition: all 0.5s ease-in-out;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .overlay {
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    a:hover .overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    a:hover .triangle {
+      transform: scale(1.5) rotate(90deg) !important;
+      transition: all 2s ease-in-out;
+    }
+  }
+
+  .modal {
+    background: #000;
+
+    .embed-responsive {
+      height: 500px;
+    }
+  }
+}
+
+
+/***************************************************
+*** resposive
+****************************************************/
+
+@media (min-width: 768px) and (max-width: 1280px) {}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (max-width: 767px) {
+  #About {
+    .about-text {
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .media {
+      margin-top: 0;
+
+      i {
+        margin-right: 10px;
+        font-size: 30px;
+        float: left;
+      }
+
+      .media-body {
+
+        p {
+          font-size: 13px;
+        }
+
+        h5 {
+          margin-right: 10px;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .video-text {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+        margin: 10px auto;
+      }
+
+      .triangle {
+        width: 60px;
+        height: 60px;
+        left: 45%;
+        top: 65%;
+      }
+    }
+
+    .dotted-line {
+      margin: 70px 0;
+    }
+
+    hr {
+      margin: 50px auto;
+    }
+
+    
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #About {
+    .about-text {
+      text-align: center;
+    }
+    .about-img {
+      .item {
+        img {
+          display: none;
+        }
+      }
+    }
+    .video-text a .triangle {
+      width: 60px;
+      height: 60px;
+      left: 45%;
+      top: 65%;
+    }
+    hr {
+      margin: 20px auto !important;
+    }
+   
+  }
+}

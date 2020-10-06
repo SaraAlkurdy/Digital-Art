@@ -1,0 +1,80 @@
+<section id="About">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="about-text">
+          <hr>
+          <h2>about us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus, dapibus sed
+            imperdiet consectetur.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-6">
+            <div class="media">
+              <i class="fas fa-th-large align-self-center"></i>
+              <div class="media-body">
+                <h5 class="mt-0">design</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-md-12 col-6">
+            <div class="media">
+              <i class="fas fa-fire align-self-center"></i>
+              <div class="media-body">
+                <h5 class="mt-0">branding</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-6 d-none d-sm-none d-md-block">
+        <div class="about-img">
+          <!-- <img src="../../assets/images/about.jpg"> -->
+          <ngx-lightbox class="item" galleryKey="galleryKey" (imagesLoaded)="imagesLoaded($event)"></ngx-lightbox>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dotted-line">
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="video-text">
+          <h1>watch the video</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper.
+            Mauris aliquet egestas metus, id pellentesque mauris tincidunt.</p>
+          <a href="#" (click)="videoModal2.show()">
+            <img src="../../assets/images/news.jpg">
+            <div class="overlay"></div>
+            <div class="triangle"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div mdbModal #videoModal2="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myVideoModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body m-0 p-0">
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe class="embed-responsive-item" width="560" height="500" seamless="seamless"
+              src="https://www.youtube.com/embed/7e90gBu4pas?autoplay=1&controls=1" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

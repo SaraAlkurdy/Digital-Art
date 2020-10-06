@@ -1,0 +1,74 @@
+<section id="Team">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="team-text">
+          <h2>team of experts</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus, dapibus sed imperdiet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card team-members">
+    <p-carousel [value]="slides" styleClass="custom-carousel" [numVisible]="4" [numScroll]="1" [circular]="true" [autoplayInterval]="7000" [responsiveOptions]="responsiveOptions" >
+      <ng-template let-slide pTemplate="item" *ngFor="let member of teamMembers">
+          <div class="car-details" >
+              <div class="p-grid p-nogutter" >
+                  <div class="p-col-12">
+                      <img [src]="slide.image" class="card-img-top" alt="image slide"
+                      style="display: block;"/>
+                      <div class="card-body">
+                        <h5 class="card-title"> {{member}}</h5>
+                        <p class="card-text">Sed mauris nulla tempor eu est vel curabitur.</p>
+                        <ul  class="list-unstyled social">
+                          <li>
+                              <!--Instagram-->
+                              <a href="#!">
+                                  <i class="fab fa-instagram"> </i>
+                              </a>
+                          </li>
+            
+                          <li>
+                              <!-- Facebook -->
+                              <a href="#!">
+                                  <i class="fab fa-facebook-f"> </i>
+                              </a>
+                          </li>
+            
+                          <li>
+                              <!--Linkedin -->
+                              <a href="#!">
+                                  <i class="fab fa-linkedin-in"> </i>
+                              </a>
+                          </li>
+            
+                          <li>
+                              <!-- Twitter -->
+                              <a href="#!">
+                                  <i class="fab fa-twitter"> </i>
+                              </a>
+                          </li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </ng-template>
+  </p-carousel>
+  </div>
+
+  <div class="prog-languages">
+    <div class="container">
+      <carousel [itemsPerSlide]="itemsPerSlide2" [singleSlideOffset]="singleSlideOffset" [startFromIndex]="6" [noWrap]="noWrap"
+      [interval]="cycleInterval" [noPause]="false">
+        <slide *ngFor="let slide of slides2;" class="mx-auto">
+          <img [src]="slide.image" alt="image slide"
+            style="display: block;">
+        </slide>
+      </carousel>
+    </div>
+  </div>
+  
+</section>

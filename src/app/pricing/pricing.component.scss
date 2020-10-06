@@ -1,0 +1,169 @@
+#Pricing {
+  .pricing-text {
+    text-align: center;
+
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #8e8e8e;
+      font-size: 18px;
+      width: 70%;
+      margin: 20px auto 30px;
+    }
+  }
+
+  .pricing-item {
+    .card {
+      background-color: #191919;
+      padding: 35px;
+      text-align: center;
+      transition-duration: 0.3s;
+      transition-property: transform;
+
+      i {
+        color: #dd1e4b;
+        font-size: 40px;
+      }
+
+      .card-body {
+        padding: 0;
+
+        h5 {
+          color: #fff;
+          text-transform: capitalize;
+          font-weight: 700;
+          margin: 15px 0;
+          font-size: 25px;
+        }
+
+        p {
+          color: #dd1e4b;
+          font-size: 35px;
+          font-weight: 700;
+          border: 1px solid #8e8e8e;
+          border-radius: 30px;
+
+          span {
+            font-size: 20px;
+            font-weight: 300;
+          }
+        }
+      }
+
+      ul {
+        margin-top: 15px;
+        border-top: none;
+        li {
+          background-color: transparent;
+          color: #8e8e8e;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          padding: 0.75rem 0;
+          text-transform: capitalize;
+
+          i {
+            color: #8e8e8e;
+            font-size: 17px;
+          }
+        }
+      }
+
+      button {
+        background: #dd1e4b;
+        color: #fff;
+        padding: 10px 25px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        margin: auto;
+
+        i {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+
+    .card:hover {
+      background-image: linear-gradient(to right, #DF0D22, #DD1E4B);
+      transform: translateY(-7.5px);
+
+      i {
+        color: #fff;
+      }
+
+      .card-body {
+
+        p {
+          color: #fff;
+        }
+
+        a {
+          i {
+            color: #fff;
+          }
+        }
+      }
+
+      ul {
+        li {
+          color: #fff;
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .dotted-line {
+    border-bottom: 1.5px dotted #626262;
+    width: 50%;
+    margin: 130px 0;
+    position: relative;
+    height: auto;
+
+    hr {
+      width: 6px;
+      height: 100px;
+      background: #dd1e4b;
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      margin: 0;
+    }
+  }
+}
+
+
+/***************************************************
+*** resposive
+****************************************************/
+
+@media (min-width: 768px) and (max-width: 1280px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (max-width: 767px) {
+  #Pricing {
+    .pricing-text {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+}

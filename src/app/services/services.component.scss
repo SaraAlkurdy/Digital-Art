@@ -1,0 +1,214 @@
+#Services {
+  .services-text {
+    hr {
+      height: 6px;
+      width: 50px;
+      background: #dd1e4b;
+      margin: 0;
+    }
+
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 50px;
+      font-weight: 600;
+      margin: 10px 0 20px;
+    }
+
+    p {
+      color: #8e8e8e;
+      font-size: 18px;
+    }
+  }
+
+  button {
+    background: linear-gradient(to right, #df0713 30%, #dd1e4b);
+    color: #fff;
+    float: right;
+    padding: 10px 25px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .services-item {
+    padding-bottom: 15px;
+    padding-top: 30px;
+
+    .card {
+      background-color: #191919;
+      padding: 35px;
+      text-align: center;
+      transition-duration: 0.3s;
+      transition-property: transform;
+
+      i {
+        color: #dd1e4b;
+        font-size: 40px;
+      }
+
+      .card-body {
+        padding: 0;
+
+        h5 {
+          color: #fff;
+          text-transform: capitalize;
+          font-weight: 700;
+          margin: 15px 0;
+          font-size: 25px;
+        }
+
+        p {
+          color: #8e8e8e;
+        }
+
+        a {
+          box-shadow: none;
+          i {
+            color: #444444;
+            font-size: 25px;
+          }
+        }
+      }
+
+    }
+
+    .card:hover {
+      background-image: linear-gradient(to right, #DF0D22, #DD1E4B);
+      transform: translateY(-7.5px);
+
+      i {
+        color: #fff;
+      }
+
+      .card-body {
+
+        p {
+          color: #fff;
+        }
+
+        a {
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .card:hover.card-border-first::before,
+    .card:hover.card-border-last::before {
+      display: none;
+    }
+
+    .card-border-first::before {
+      content: "";
+      position: absolute;
+      border-left: 10px solid;
+      border-top: 10px solid;
+      border-image: linear-gradient(to right, #df0713, #dd1e4b) 1 stretch;
+      top: -10.5px;
+      left: -10.5px;
+      height: 60%;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 50%;
+    }
+
+    .card-border-last::before {
+      content: "";
+      position: absolute;
+      border-right: 10px solid;
+      border-bottom: 10px solid;
+      border-image: linear-gradient(to right, #df0713, #dd1e4b) 1 stretch;
+      bottom: -10.5px;
+      right: -10.5px;
+      height: 60%;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 50%;
+    }
+  }
+
+  .dotted-line {
+    border-bottom: 1.5px dotted #626262;
+    width: 50%;
+    margin: 130px 0;
+    position: relative;
+    height: auto;
+
+    hr {
+      width: 6px;
+      height: 100px;
+      background: #dd1e4b;
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      margin: 0;
+    }
+  }
+
+  .dotted-line-parent {
+    direction: rtl;
+
+    .dotted-line {
+      hr {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+
+
+/***************************************************
+*** resposive
+****************************************************/
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 767px) {
+  #Services {
+    .services-text {
+  
+      h2 {
+        font-size: 30px;
+      }
+  
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #Services {
+    .services-item {
+      .card {
+        padding: 20px;
+        i {
+          font-size: 30px;
+        }
+
+        .card-body {
+          h5 {
+            font-size: 20px;
+          }
+          a {
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

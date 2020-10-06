@@ -1,1 +1,273 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~ng-wizard/themes/ng_wizard.min.css";
+/* Optional */
+/* If a theme other than default is used, the css file for that theme is required. */
+@import "~ng-wizard/themes/ng_wizard_theme_arrows.min.css";
+@import "~ng-wizard/themes/ng_wizard_theme_circles.min.css";
+@import "~ng-wizard/themes/ng_wizard_theme_dots.min.css";
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    background: #040402;
+    padding-top: 100px;
+  }
+}
+
+#About {
+  .about-img {
+    .item {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#Services {
+  .services-item {
+    .item {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#Contact {
+  .contact-img {
+    .item {
+      img {
+        width: 100%;
+        display: none;
+      }
+      img[src="../../assets/images/about-2.jpg"] {
+        display: block;
+      }
+    }
+  }
+}
+
+.carousel-indicators .active,
+body .ui-carousel .ui-carousel-dots-container .ui-carousel-dot-item.ui-state-highlight .ui-carousel-dot-icon {
+  background-image: linear-gradient(to right, #df0d22, #dd1e4b);
+}
+body .ui-carousel .ui-carousel-content .ui-carousel-prev,
+body .ui-carousel .ui-carousel-content .ui-carousel-next {
+  display: none;
+}
+body .ui-button:enabled:focus {
+  box-shadow: none;
+}
+
+.team-members {
+  .carousel-indicators,
+  .ui-helper-reset {
+    bottom: -80px !important;
+    margin-top: 35px;
+
+    li {
+      width: 40px;
+      height: 7px;
+      margin: 0 5px;
+    }
+  }
+
+  .ui-carousel-content {
+    overflow: hidden !important;
+  }
+}
+
+.prog-languages {
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none !important;
+  }
+}
+
+.left .carousel-control .carousel-control-prev {
+  display: none;
+}
+
+#Contact {
+  .ng-wizard-theme-circles > ul.step-anchor > li.done > a {
+    border-color: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    background: #dd1e4b;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor > li > a {
+    border: 2px solid #f5f5f5;
+    background: #f5f5f5;
+    width: 60%;
+    height: 70%;
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px #fff !important;
+    text-decoration: none;
+    outline-style: none;
+    z-index: 99;
+    color: #bbb;
+    line-height: 0;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor > li > a {
+    /* border: 2px solid #f5f5f5; */
+    background: #191919;
+    width: 40px;
+    height: 70%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 50%;
+    /* box-shadow: inset 0 0 0 3px #fff !important; */
+    text-decoration: none;
+    outline-style: none;
+    z-index: 99;
+    /* color: #bbb; */
+    line-height: 0;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor {
+    background-color: transparent;
+    margin: 30px 0 70px;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor > li.active > a > small,
+  .ng-wizard-theme-circles > ul.step-anchor > li > a > small {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor > li {
+    margin-left: 150px;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor > li:first-child {
+    margin-left: 50px;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor > li > a {
+    border: none !important;
+    box-shadow: none !important;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .ng-wizard-theme-circles > ul.step-anchor:before {
+    background-color: #191919;
+  }
+
+  .ng-wizard-theme-circles .step-content {
+    background-color: transparent;
+  }
+
+  .ng-wizard-theme-circles .ng-wizard-toolbar {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    background-color: transparent;
+    padding-left: 0;
+  }
+
+  .btn-info {
+    background-color: #dd1e4b;
+    display: none;
+  }
+
+  .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+  .btn-group > .btn-group:not(:last-child) > .btn,
+  .btn-group > .btn:not(:first-child),
+  .btn-group > .btn-group:not(:first-child) > .btn,
+  .btn-group > .btn:hover,
+  .btn-group-vertical > .btn:hover {
+    display: none;
+  }
+  .ui-galleria {
+    max-width: initial !important;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  .ui-galleria-item-wrapper {
+    height: 80vh;
+  }
+}
+
+/* resposive */
+
+@media (min-width: 768px) and (max-width: 1280px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (max-width: 767px) {
+  #Contact {
+    #ngwizard {
+      ul {
+        li:first-child {
+          margin-left: 30px;
+        }
+        li {
+          a {
+            font-size: 16px;
+            small {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    .ng-wizard-theme-circles > ul.step-anchor > li > a {
+      width: 35px;
+      height: 60%;
+      padding: 16px 0;
+    }
+    .ng-wizard-theme-circles > ul.step-anchor > li {
+      margin-left: 135px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #Contact {
+    #ngwizard {
+      ul {
+        li:first-child {
+          margin-left: 10px;
+        }
+        li {
+          a {
+            font-size: 14px;
+            small {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    .ng-wizard-theme-circles > ul.step-anchor > li > a {
+      width: 25px;
+      height: 60%;
+      padding: 12px 0;
+    }
+
+    .ng-wizard-theme-circles > ul.step-anchor > li {
+      margin-left: 120px;
+    }
+  }
+}
